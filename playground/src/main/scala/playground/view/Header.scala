@@ -10,6 +10,8 @@ object Header {
   def apply(): Node =
     <header class={ Style.header.htmlClass }>
       Git-workshop playground A
+
+      B
     </header>
 
   object Style extends StyleSheet.Inline {
