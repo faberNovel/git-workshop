@@ -221,7 +221,7 @@ git commit
 > If you want to commit files which were already added, `git commit -a` can be
 > used without calling `git add`.
 
-> Use `git commit --ammend` if you need to change your commit message
+> Use `git commit --amend` if you need to change your commit message
 > afterward.
 
 ## Push your commit to your repository
@@ -262,12 +262,12 @@ git push origin feature/arrow # then create
 ```
 
 > It's not recommanded to rename a branch after a Pull Request has already been
-> created.
+> created as it will close the PR.
 
 ## Improve the arrow
 
 Still on the `feature/arrow` branch, you want to improve the arrow so that it
-give the information of done todos.
+gives the information of done todos.
 
 The goal is to colorize in green the number of equals in the arrow
 corresponding to the number of completed todos.
@@ -545,7 +545,7 @@ You are creating a fix commit instead of amending the last one, so that the
 reviewer will see only new changes and will not have to review everything back
 again.
 
-## Check and approve the pull request
+## Review and approve the pull request
 
 1. Check that the person on your right made the changes you requested
 
