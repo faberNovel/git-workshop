@@ -701,12 +701,10 @@ You need to extract the commit in a new branch.
 1. Retrieve your commit with changes for build.properties
 
 ```bash
-git log --oneline
+git log -n 3 --oneline
 $ 6e13277 (HEAD -> feature/refactor-playground) Refactoring - Step 2 (WIP)
 $ 19bd652 Update to sbt v1.2.7
 $ e590939 Refactoring - Step 1 (WIP)
-$ 0c2b54e (origin/master, origin/HEAD, master) ...
-$ [...]
 ```
 
 `19bd652` is the commit ID for your changes about sbt version.
@@ -732,10 +730,8 @@ git cherry-pick <your-commit-id>
 5. Check that your commit is in your branch
 
 ```bash
-git log --oneline
+git log -n 1 --oneline
 $ 3a8f6de (HEAD -> task/update-sbt-127) Update to sbt v1.2.7
-$ 0c2b54e (origin/master, origin/HEAD, master) ...
-$ [...]
 ```
 
 ## Being faster with git config aliases
